@@ -1,0 +1,15 @@
+[package]
+name = "rust-voice-assistant"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"
+thiserror = "1.0"
+cpal = "0.15"
+whisper-rs = "0.1"
+elevenlabs = "0.1"
+rodio = { version = "0.17", features = ["symphonia-mp3", "symphonia-wav"] }
+chrono = "0.4"
+dotenv = "0.15"
