@@ -49,19 +49,6 @@ Say commands, get responses.
 
 ## 🛠️ Development
 
-### 📁 Project Structure
-
-```
-rust-voice-assistant/
-├── src/
-│   └── main.rs       # Main logic
-├── Cargo.toml        # Dependencies
-├── .github/
-│   └── workflows/
-│       └── ci.yml    # CI/CD
-└── README.md         # Docs
-```
-
 ### 🧩 Core Components
 
 1. **main.rs**: Audio loop, transcription, command handling, TTS.
