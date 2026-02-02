@@ -12,20 +12,20 @@ Set API key, run `cargo run`, say "time", hear response.
 
 # ✨ Features
 
-### 🎤 STT & TTS
+-🎤 STT & TTS
 - Whisper for transcription.
 - ElevenLabs for speech synthesis.
 
-### 🚀 Async
+-🚀 Async
 - Tokio for concurrency.
 - CPAL for audio capture.
 
-### 🛠️ Command Processing
+-🛠️ Command Processing
 - Basic NLP for commands.
 
 # 📦 Installation
 
-### 🔧 Compile from Source
+-🔧 Compile from Source
 
 # Clone
 git clone https://github.com/mkyla/rust-voice-assistant.git
@@ -49,11 +49,11 @@ Say commands, get responses.
 
 # 🛠️ Development
 
-### 🧩 Core Components
+-🧩 Core Components
 
 1. **main.rs**: Audio loop, transcription, command handling, TTS.
 
-### 🛠️ Tech Stack
+-🛠️ Tech Stack
 
 - Rust 2021
 - STT: Whisper
