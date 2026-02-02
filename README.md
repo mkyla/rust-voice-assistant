@@ -1,16 +1,18 @@
 # Rust Voice Assistant
 
+## Rust Voice Assistant
+
 A lightweight Rust-based voice assistant with speech-to-text and text-to-speech capabilities, using Whisper for STT and ElevenLabs for TTS.
 
-# 📖 Overview
+## 📖 Overview
 
 Rust Voice Assistant captures audio asynchronously, transcribes it with Whisper, processes basic commands, and responds with ElevenLabs TTS. Ideal for offline STT and cloud TTS integration.
 
-# 🎬 Demo
+## 🎬 Demo
 
 Set API key, run `cargo run`, say "time", hear response.
 
-# ✨ Features
+## ✨ Features
 
 -🎤 STT & TTS
 - Whisper for transcription.
@@ -23,18 +25,18 @@ Set API key, run `cargo run`, say "time", hear response.
 -🛠️ Command Processing
 - Basic NLP for commands.
 
-# 📦 Installation
+## 📦 Installation
 
 -🔧 Compile from Source
 
-# Clone
+## Clone
 git clone https://github.com/mkyla/rust-voice-assistant.git
 cd rust-voice-assistant
 
-# Build
+## Build
 cargo build --release
 
-# 📋 Usage Guide
+## 📋 Usage Guide
 
 1. Set ELEVENLABS_API_KEY
 2. Download Whisper model to models/
@@ -42,12 +44,12 @@ cargo build --release
 
 Say commands, get responses.
 
-# ⚙️ Configuration
+## ⚙️ Configuration
 
 - API Key: ELEVENLABS_API_KEY env var
 - Model: models/ggml-base.en.bin
 
-# 🛠️ Development
+## 🛠️ Development
 
 -🧩 Core Components
 
@@ -60,6 +62,6 @@ Say commands, get responses.
 - TTS: ElevenLabs API
 - Audio: CPAL, Rodio
 
-# 📄 License
+## 📄 License
 
 BSD-3-Clause
