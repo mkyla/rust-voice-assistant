@@ -1,40 +1,73 @@
 # Rust Voice Assistant
 
-A simple voice assistant built in Rust using ElevenLabs for TTS and Whisper for STT.
+A lightweight Rust-based voice assistant with speech-to-text and text-to-speech capabilities, using Whisper for STT and ElevenLabs for TTS.
 
-## Features
+## 📖 Overview
 
-- Asynchronous audio capture with CPAL
-- Speech-to-text with Whisper
-- Text-to-speech with ElevenLabs
-- Basic command processing
-- Error handling
-- Tests
-- CI/CD with GitHub Actions
+Rust Voice Assistant captures audio asynchronously, transcribes it with Whisper, processes basic commands, and responds with ElevenLabs TTS. Ideal for offline STT and cloud TTS integration.
 
-## Setup
+## 🎬 Demo
 
-1. Clone the repo
-2. Download Whisper model (e.g., ggml-base.en.bin) to models/
-3. Set ELEVENLABS_API_KEY environment variable
-4. Run `cargo run`
+Set API key, run `cargo run`, say "time", hear response.
 
-## Usage
+## ✨ Features
 
-The assistant listens for 5 seconds, transcribes speech, processes commands, and responds via TTS.
+### 🎤 STT & TTS
+- Whisper for transcription.
+- ElevenLabs for speech synthesis.
 
-Commands:
-- "hello" -> Greets
-- "time" -> Tells current time
+### 🚀 Async
+- Tokio for concurrency.
+- CPAL for audio capture.
 
-## Build
+### 🛠️ Command Processing
+- Basic NLP for commands.
 
-```bash
-cargo build
-```
+## 📦 Installation
 
-## Test
+### 🔧 Compile from Source
 
-```bash
-cargo test
-```
+# Clone
+git clone https://github.com/mkyla/rust-voice-assistant.git
+cd rust-voice-assistant
+
+# Build
+cargo build --release
+
+## 📋 Usage Guide
+
+1. Set ELEVENLABS_API_KEY
+2. Download Whisper model to models/
+3. Run `./target/release/rust-voice-assistant`
+
+Say commands, get responses.
+
+## ⚙️ Configuration
+
+- API Key: ELEVENLABS_API_KEY env var
+- Model: models/ggml-base.en.bin
+
+## 🛠️ Development
+
+### 📁 Project Structure
+
+rust-voice-assistant/
+├── src/main.rs
+├── Cargo.toml
+├── .github/workflows/ci.yml
+└── README.md
+
+### 🧩 Core Components
+
+1. **main.rs**: Audio loop, transcription, command handling, TTS.
+
+### 🛠️ Tech Stack
+
+- Rust 2021
+- STT: Whisper
+- TTS: ElevenLabs API
+- Audio: CPAL, Rodio
+
+## 📄 License
+
+BSD-3-Clause
