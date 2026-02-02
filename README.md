@@ -51,11 +51,16 @@ Say commands, get responses.
 
 ### 📁 Project Structure
 
+```
 rust-voice-assistant/
-├── src/main.rs
-├── Cargo.toml
-├── .github/workflows/ci.yml
-└── README.md
+├── src/
+│   └── main.rs       # Main logic
+├── Cargo.toml        # Dependencies
+├── .github/
+│   └── workflows/
+│       └── ci.yml    # CI/CD
+└── README.md         # Docs
+```
 
 ### 🧩 Core Components
 
